@@ -7,11 +7,11 @@ sudo rm /etc/apt/apt.conf.d/*.*
 sudo apt update
 mkdir downloads
 cd downloads
-wget https://repo.continuum.io/archive/Anaconda3-5.0.1-Linux-x86_64.sh
-bash Anaconda3-5.0.1-Linux-x86_64.sh -b
+wget https://repo.continuum.io/archive/Anaconda2-2019.10-Linux-x86_64.sh
+bash Anaconda2-2019.10-Linux-x86_64.sh -b
 cd
-echo 'export PATH=~/anaconda3/bin:$PATH' >> ~/.bashrc
-export PATH=~/anaconda3/bin:$PATH
+echo 'export PATH=~/anaconda2/bin:$PATH' >> ~/.bashrc
+export PATH=~/anaconda2/bin:$PATH
 source ~/.bashrc
 sudo apt install unzip -y
 sudo apt -y upgrade --force-yes
@@ -50,4 +50,3 @@ sudo dpkg -i cuda-repo-ubuntu1604-9-0-local-cublas-performance-update_1.0-1_amd6
 wget https://developer.nvidia.com/compute/cuda/9.0/Prod/patches/2/cuda-repo-ubuntu1604-9-0-local-cublas-performance-update-2_1.0-1_amd64-deb
 
 sudo dpkg -i cuda-repo-ubuntu1604-9-0-local-cublas-performance-update-2_1.0-1_amd64-deb
-
